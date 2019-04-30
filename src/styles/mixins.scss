@@ -1,0 +1,211 @@
+@mixin center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &.x {
+    transform: translate(0%, -50%);
+  }
+
+  &.y {
+    transform: translate(-50%, 0%);
+  }
+}
+
+@mixin center-image{
+  position: absolute;
+  left: -10000%;
+  right: -10000%;
+  top: -10000%;
+  bottom: -10000%;
+  margin: auto;
+  min-width: 1000%;
+  min-height: 1000%;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+  -webkit-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  transition-timing-function: cubic-bezier(.21,.16,.19,1.04);
+}
+
+//Shadow
+@mixin shadow {
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
+}
+@mixin shadow-btn{
+  -webkit-box-shadow: 0px 26px 51px -14px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 26px 51px -14px rgba(0,0,0,0.27);
+  box-shadow: 0px 26px 51px -14px rgba(0,0,0,0.27);
+}
+
+//Time anim
+@mixin two-mseconds-transition {
+  transition: all 0.2s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin tree-mseconds-transition {
+  transition: all 0.3s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin five-mseconds-transition {
+  transition: all 0.5s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin eight-mseconds-transition {
+  transition: all 0.8s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin ten-mseconds-transition {
+  transition: all 1s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin twenty-mseconds-transition {
+  transition: all 2s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin placeholderColor($color) {
+  ::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    color: $color;
+  }
+
+  ::-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin mediumClientConfig(){
+  margin-right: auto!important;
+  margin-left: auto!important;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  .savingsCard{
+      margin: 10px 10px !important;
+      .savingImg{
+          max-height: 145px !important;
+          min-height: 145px !important;
+      }
+  }
+}
+
+@mixin mediumAgentConfig($width){
+  margin-right: auto!important;
+  margin-left: auto!important;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 $width;
+  flex: 0 0 $width;
+  max-width: $width;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+}
+
+@mixin smallConfig(){
+  h5{font-size: .8rem;}
+  .respNoWrap{
+    flex-wrap: nowrap !important;
+  }
+  .respWrap{
+    flex-wrap: wrap !important;
+  }
+  .savingImg{
+    max-height: 170px !important;
+    min-height: 170px !important;
+  }
+}
+
+@mixin setHeight($altura) {
+  height: $altura;
+  min-height: $altura;
+  max-height: $altura;
+}
+
+@mixin setFloat($float) {
+  float: $float;
+  clear: both;
+}
+
+//Shadow
+@mixin shadow {
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.08);
+}
+@mixin shadow-btn{
+  -webkit-box-shadow: 0px 26px 51px -14px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 26px 51px -14px rgba(0,0,0,0.27);
+  box-shadow: 0px 26px 51px -14px rgba(0,0,0,0.27);
+}
+@mixin shadow-bot{
+  -webkit-box-shadow: 0px 6px 10px -5px rgba(199, 199, 199, 0.65);
+  box-shadow: 0px 6px 10px -5px rgba(199, 199, 199, 0.65);
+}
+@mixin shadow-bot-hover{
+  -webkit-box-shadow: 0px 6px 10px -5px $gradiant1;
+  -moz-box-shadow: 0px 6px 10px -5px $gradiant1;
+  box-shadow: 0px 6px 10px -5px $gradiant1;
+}
+@mixin shadow-bot-hover-remove{
+  -webkit-box-shadow: 0px 6px 10px -5px $notification-color;
+  -moz-box-shadow: 0px 6px 10px -5px $notification-color;
+  box-shadow: 0px 6px 10px -5px $notification-color;
+}
+
+//Time anim
+@mixin two-mseconds-transition {
+  transition: all 0.2s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin tree-mseconds-transition {
+  transition: all 0.3s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin five-mseconds-transition {
+  transition: all 0.5s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin eight-mseconds-transition {
+  transition: all 0.8s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin ten-mseconds-transition {
+  transition: all 1s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin twenty-mseconds-transition {
+  transition: all 2s ease-in-out;
+  transition-timing-function: cubic-bezier(0.21, 0.16, 0.19, 1.04);
+}
+
+@mixin corporative-gradiant {
+  background: $gradiant2; /* Old browsers */
+  background: -moz-linear-gradient(left, $gradiant1 0%, $gradiant2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, $gradiant1 0%,$gradiant2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $gradiant1 0%,$gradiant2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradiant1', endColorstr='$gradiant2',GradientType=1 ); /* IE6-9 */
+}

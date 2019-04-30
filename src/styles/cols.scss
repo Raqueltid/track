@@ -1,0 +1,102 @@
+//Cols
+.col100, .col90, .col80, .col75, .col70, .col66, .col60, .col55, .col50, .col45, .col40, .col33, .col30, .col25, .col20, .col10 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+
+  .inside-col {
+    margin: 2.5px;
+    padding: 2.5px;
+
+    &.nopadding {
+      padding: 0px;
+    }
+  }
+}
+
+.col10 {
+  width: 10%;
+}
+
+.col20 {
+  width: 20%;
+}
+
+.col25 {
+  width: 25%;
+}
+
+.col30 {
+  width: 25%;
+}
+
+.col33 {
+  width: 33.3%;
+}
+
+.col40 {
+  width: 40%;
+}
+
+.col45 {
+  width: 45%;
+}
+
+.col50 {
+  width: 50%;
+}
+
+.col55 {
+  width: 55%;
+}
+
+.col60 {
+  width: 60%;
+}
+
+.col66 {
+  width: 66.7%;
+}
+
+.col70 {
+  width: 70%;
+}
+
+.col75 {
+  width: 75%;
+  &.margin-r-col{
+    width: calc(75% - 20px);
+    margin-right: 20px;
+  }
+}
+
+.col80 {
+  width: 80%;
+}
+
+.col90 {
+  width: 90%;
+}
+
+.col100 {
+  width: 100%;
+}
+
+//MEDIA
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+  .col10, .col20, .col25, .col30, .col33, .col40, .col45, .col50, .col55, .col60, .col66, .col70, .col75, .col75.margin-r-col, .col80, .col90 {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .col10, .col20, .col25, .col30, .col33, .col40, .col45, .col50, .col55, .col60, .col66, .col70, .col75, .col80, .col90 {
+    width: 100%;
+  }
+}

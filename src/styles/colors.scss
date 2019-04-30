@@ -1,0 +1,118 @@
+// COLORS
+
+$background-message: green;
+$strong-corporate-color: #213E7F;
+$corporate-color: #21A0D2;
+$usercard-header: #E9FFFF;
+$background-color-app: #EDEDED;
+$color-shadow-message: #c3c3c3;
+$font-color-clock: #6E6E6E;
+$font-color-quickreplies: white;
+$font-color-errors: #dc3545;
+
+$text-color: #575962;
+$notification-color: #f6546b;
+$btn-color: #43c622;
+$gray-color: #f6f6f8;
+$gray2-color: #dadada;
+
+$gradiant1: #ff004c;
+$gradiant2: #ff007e;
+
+$client: quantion;
+
+@if $client == basf {
+	$background-message: white;
+	$strong-corporate-color: #213E7F;
+	$corporate-color: #21A0D2;
+	$usercard-header: #FFFFFF;
+	$background-color-app: #EDEDED;
+	$color-shadow-message: #c3c3c3;
+  $font-color-quickreplies: white;
+	$gradiant1: #0071ff;
+	$gradiant2: #0013b9;
+} @else if $client == atm {
+	$background-message: white;
+	$strong-corporate-color: #237f52;
+	$corporate-color: #009681;
+	$usercard-header: #FFFFFF;
+	$background-color-app: #EDEDED;
+	$color-shadow-message: #c3c3c3;
+  $font-color-quickreplies: white;
+  $font-color-errors: #980200;
+	$gradiant1: #237f52;
+	$gradiant2: #009681;
+} @else if $client == quantion {
+	$background-message: white;
+	$strong-corporate-color: #0013b9;
+	$corporate-color: #0071ff;
+	$usercard-header: #FFFFFF;
+	$background-color-app: #EDEDED;
+	$color-shadow-message: #c3c3c3;
+  $font-color-quickreplies: white;
+	$font-color-errors: #980200;
+	$gradiant1: #0071ff;
+	$gradiant2: #0013b9;
+
+}
+
+//HEADER
+//Client
+$light-header-bg-color: $corporate-color;
+$light-header-text-color: #FFFFFF;
+
+$header-usercard-bg-color: $usercard-header;
+// End of header
+/*****/
+$header-bg-color-agent: $strong-corporate-color;
+$header-text-color: #FFFFFF;
+
+$header-bg-color: $corporate-color;
+$header-bg-active-color: #FFFFFF;
+/*****/
+
+//BODY - LEFT MENUS
+//Client
+$light-menu-bg-color: #FFFFFF;
+$light-menu-text-color: $corporate-color;
+
+$light-menu-bg-active: $corporate-color;
+$light-menu-text-active: #FFFFFF;
+
+//Agent
+$dark-menu-bg-color: #FFFFFF;
+$dark-menu-text-color: $strong-corporate-color;
+
+$dark-menu-bg-active: $strong-corporate-color;
+$dark-menu-text-active: #FFFFFF;
+
+$submenu-bg-color: $strong-corporate-color;
+$submenu-text-color: #FFFFFF;
+$submenu-text-active: #7fffed;
+// End of body - left menus
+
+//FOOTER
+
+//BODY
+$body-bg-color: $background-color-app;
+$body-text-color: $strong-corporate-color;
+
+//BODY - MAIN CONTENT
+$lightSection-bg-color-title: $corporate-color;
+$lightSection-text-color-title: #FFFFFF;
+$lightSection-bg-color-body: #FFFFFF;
+$lightSection-text-color-body: $corporate-color;
+
+$darkSection-bg-color-title: $strong-corporate-color;
+$darkSection-text-color-title: #FFFFFF;
+
+$lightSection-text-color: #FFFFFF;
+$lightSection-bg-color: $corporate-color;
+
+//BUTTONS
+$primary-btn: $strong-corporate-color;
+
+//BORDERS
+$border-grey: #DADADA;
+$border-light-blue: $corporate-color;
+
